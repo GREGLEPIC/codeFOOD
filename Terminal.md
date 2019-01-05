@@ -7,15 +7,14 @@ https://www.learnenough.com
 ## Editing the line
 
 ```
-Key	Symbol
-Command	                    ⌘
-Control	                    ⌃
-Shift	                      ⇧
-Option                     	⌥
-Up, down, left, right	      ↑ ↓ ← →
-Enter/Return	              ↵
-Tab	                        ⇥
-Delete                    	⌫
+Command                     ⌘
+Control                     ⌃
+Shift                     ⇧
+Option                      ⌥
+Up, down, left, right                     ↑ ↓ ← →
+Enter/Return                      ↵
+Tab                       ⇥
+Delete                      ⌫
 ```
 
 ## 1st commands
