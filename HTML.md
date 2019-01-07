@@ -127,7 +127,7 @@ Utilisez l'attribut id pour donner un nom à l'ancre. Cela nous servira ensuite 
 <h2 id="mon_ancre">Titre</h2>
 ```
 Ensuite, il suffit de créer un lien comme d'habitude, mais cette fois l'attributhrefcontiendra un dièse (#) suivi du nom de l'ancre. Exemple :
-``
+```
 <a href="#mon_ancre">Aller vers l'ancre</a>
 ```
 Normalement, si vous cliquez sur le lien, cela vous amènera plus bas dans la même page (à condition que la page comporte suffisamment de texte pour que les barres de défilement se déplacent automatiquement).
@@ -179,7 +179,7 @@ target=""à la balise<a>:
 ```
 
 exemple :
-``
+```
 <p>Bonjour. Souhaitez-vous visiter <a href="https://openclassrooms.com" title="Vous ne le regretterez pas !" target="_blank">OpenClassrooms</a> ?</p>
 ```
 
