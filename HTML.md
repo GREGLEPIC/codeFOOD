@@ -222,10 +222,13 @@ Si on résume, voici quel format adopter en fonction de l'image que vous avez :
 ```
 
 ## La balise doit être accompagnée de deux attributs obligatoires :
+```
+src="images/fleur.png"
+```
 
-src  : il permet d'indiquer où se trouve l'image que l'on veut insérer. Vous pouvez soit mettre un chemin absolu (ex. :  http://www.site.com/fleur.png), soit mettre le chemin en relatif (ce qu'on fait le plus souvent). Ainsi, si votre image est dans un sous-dossier  images, vous devrez taper :  src="images/fleur.png"
-
-alt  : cela signifie « texte alternatif ». On doit toujours indiquer un texte alternatif à l'image, c'est-à-dire un court texte qui décrit ce que contient l'image. Ce texte sera affiché à la place de l'image si celle-ci ne peut pas être téléchargée (cela arrive), ou dans les navigateurs de personnes handicapées (non-voyants) qui ne peuvent malheureusement pas « voir » l'image. Cela aide aussi les robots des moteurs de recherche pour les recherches d'images. Pour la fleur, on mettrait par exemple :  alt="Une fleur".
+```
+alt="Une fleur"
+```
 
 
 ## Les images doivent se trouver obligatoirement à l'intérieur d'un paragraphe (<p></p>).
