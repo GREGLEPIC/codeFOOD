@@ -175,7 +175,7 @@ il suffit de rajouter un attribut title="" dans la balise <a>
 Il est possible de « forcer » l'ouverture d'un lien dans une nouvelle fenêtre. Pour cela, on rajoutera
 
 ```
-target=""à la balise<a>:
+target="_blank<a>:
 ```
 
 exemple :
