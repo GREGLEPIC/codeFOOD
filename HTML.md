@@ -199,3 +199,90 @@ Par exemple, supposez que vous vouliez faire téléchargermonfichier.zip. Placez
 ```
 <p><a href="monfichier.zip">Télécharger le fichier</a></p>
 ```
+
+
+
+## Les images
+
+Il existe un format adapté à chaque image
+Si on résume, voici quel format adopter en fonction de l'image que vous avez :
+
+### Une photo : utilisez un JPEG.
+
+### N'importe quel graphique avec peu de couleurs (moins de 256) : utilisez un PNG 8 bits ou éventuellement un GIF.
+
+### N'importe quel graphique avec beaucoup de couleurs : utilisez un PNG 24 bits.
+
+### Une image animée : utilisez un GIF animé.
+
+## Balise de l'insertion d'une image
+
+```
+<img />
+```
+
+## La balise doit être accompagnée de deux attributs obligatoires :
+
+src  : il permet d'indiquer où se trouve l'image que l'on veut insérer. Vous pouvez soit mettre un chemin absolu (ex. :  http://www.site.com/fleur.png), soit mettre le chemin en relatif (ce qu'on fait le plus souvent). Ainsi, si votre image est dans un sous-dossier  images, vous devrez taper :  src="images/fleur.png"
+
+alt  : cela signifie « texte alternatif ». On doit toujours indiquer un texte alternatif à l'image, c'est-à-dire un court texte qui décrit ce que contient l'image. Ce texte sera affiché à la place de l'image si celle-ci ne peut pas être téléchargée (cela arrive), ou dans les navigateurs de personnes handicapées (non-voyants) qui ne peuvent malheureusement pas « voir » l'image. Cela aide aussi les robots des moteurs de recherche pour les recherches d'images. Pour la fleur, on mettrait par exemple :  alt="Une fleur".
+
+
+## Les images doivent se trouver obligatoirement à l'intérieur d'un paragraphe (<p></p>).
+Voici un exemple d'insertion d'image :
+```
+<p>
+    Voici une photo que j'ai prise lors de mes dernières vacances à la montagne :<br />
+    <img src="images/montagne.jpg" alt="Photo de montagne" />
+</p>
+```
+
+## Ajouter une infobulle à votre image
+L'attribut permettant d'afficher une bulle est  title.
+
+Voici ce que cela peut donner :
+
+```
+<p>
+    Voici une photo que j'ai prise lors de mes dernières vacances à la montagne :<br />
+    <img src="images/montagne.jpg" alt="Photo de montagne" title="C'est beau les Alpes quand même !" />
+</p>
+```
+
+## Ajouter un lien dans une image
+
+Pour cela, je vais rentrer ma balise <img > à l'intérieur de ma balise <a >, à la place du texte.
+
+Voici le code HTML que je vais utiliser pour cela :
+
+```
+<p>
+    Vous souhaitez voir l'image dans sa taille d'origine ? Cliquez dessus !<br />
+    <a href="img/montagne.jpg"><img src="img/montagne_mini.jpg" alt="Photo de montagne" title="Cliquez pour agrandir" /></a>
+</p>
+```
+
+## Les figures
+
+Grace à elle, une image peut etre situé en dehors d'un paragraphe (de toute façon on peut utiliser un <div)
+
+```
+<figure>
+    <img src="images/blocnotes.png" alt="Bloc-Notes" />
+</figure>
+```
+
+Les figures peuvent être de différents types :
+
+ - images ;
+ - codes source ;
+ - citations ;
+etc.
+
+Pour ajouter une légende, utilisez la balise  <figcaption> à l'intérieur de la balise  <figure>, comme ceci :
+```
+<figure>
+    <img src="images/blocnotes.png" alt="Bloc-Notes" />
+    <figcaption>Le logiciel Bloc-Notes</figcaption>
+</figure>
+```
