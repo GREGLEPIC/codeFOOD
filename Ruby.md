@@ -139,7 +139,6 @@ else
 end
 ```
 
-
 ### On peut combiner des conditions à l'aide des signes &&  (pour "ET") et || (pour "OU").
 
 ### Les booléens sont des variables utiles pour tester si une condition est vraie ou fausse.
@@ -156,3 +155,56 @@ Pour vérifier une condition d'égalité, il faut utiliser deux signes égal (==
 age = 18 #range la valeur 18 dans la variable age et renvoie donc 18
 age == 18 #booléen qui renvoie True si age vaut 18, False sinon
 ```
+
+
+Math.sqrt
+Math est un module
+sqrt est la méthode
+. permet de savoir qui doit recevoir le "message"
+
+```
+Math.sqrt(9)
+```
+Nous cherchons la racine carré du chiffre 9
+Pour Ruby, ce message consiste à appeler la méthode sqrt, avec le paramètre 9, et à retourner le résultat.
+
+
+def a pour role de commencer la 'def'inition d'une méthode.
+```
+def h (la méthode s'appellera donc h
+  puts "Hello World!" (le code a executé)
+ end (fin de définition de la méthode)
+```
+
+Pour donner un parametre à la méthode
+```
+def h(name)
+ puts "Hello #{name}!"
+end
+
+h("Matz")
+Hello Matz!
+```
+
+class définit plusieurs méthode
+@name est une variable d'instance, c'est à dire qu'elle sera disponible pour toutes les méthodes de la class Greeter
+```
+class Greeter
+   def initialize(name = "World")
+     @name = name
+   end
+   def say_hi
+     puts "Hi #{@name}!"
+   end
+   def say_bye
+     puts "Bye #{@name}, come back soon."
+   end
+end
+```
+
+Création d'un objet de la class Greeter
+```
+g = Greeter.new("Pat")
+
+
+
